@@ -2,6 +2,7 @@ import React from 'react'
 
 import classes from './BuildControls.css'
 import BuildControl from './BuilControl/BuildControl'
+import BurgerBuilder from '../../../containers/BurgerBuilder/BurgerBuilder';
 
 const controls = [
     {label: 'Salad', type: 'salad'},
@@ -14,7 +15,11 @@ const buildControls = (props) => {
     return (
         <div className={classes.BuildControls}>
             {controls.map(ctrl => {
-                return <BuildControl key={ctrl.label} label={ctrl.label}/>
+                return <BuildControl 
+                    key={ctrl.label} 
+                    label={ctrl.label}
+                    added={()=>props.ingredientAdded(ctrl.type)}
+                />
             })}
         </div>
     )
