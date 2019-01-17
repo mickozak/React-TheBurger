@@ -10,7 +10,7 @@ import axios from "../../../axios-orders";
 
 class ContactData extends Component {
     state = {
-        orderForm:{
+        orderForm: {
             name: {
                 elementType: 'input',
                 elementConfig: {
@@ -47,24 +47,17 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'email',
-                    placeholder: 'Your E-mail'
+                    placeholder: 'Your E-Mail'
                 },
-                value: {
-                    elementType: 'select',
-                    elementConfig: {
-                        option: [
-                            {value: 'fastest', displayValue: 'Fastest'},
-                            {value: 'cheapest', displayValue: 'Cheapest'}
-                        ]
-                    },
-                    value: ''
-                }
+                value: ''
             },
             deliveryMethod: {
-                elementType: 'input',
+                elementType: 'select',
                 elementConfig: {
-                    type: 'text',
-                    placeholder: 'Your Name'
+                    options: [
+                        {value: 'fastest', displayValue: 'Fastest'},
+                        {value: 'cheapest', displayValue: 'Cheapest'}
+                    ]
                 },
                 value: ''
             }
