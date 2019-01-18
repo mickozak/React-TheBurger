@@ -82,6 +82,22 @@ class ContactData extends Component {
             } );
     }
 
+    inputChangedHandler = (event, inputIdentifier ) => {
+        //Dokonuje kopjowania płytkiego
+        const updateOrderForm = {
+            ...this.state.orderForm
+        }
+        //Dokonuje kopjowania głębokiego
+        const updateFormElement = {
+            ...updateOrderForm[inputIdentifier]
+        }
+        updateFormElement.value = event.target.value
+        updateOrderForm[inputIdentifier] = updateFormElement
+        this.setState({
+            orderForm: updateOrderForm
+        }) 
+    }
+
     render () {
         const formElementsAray = []
         for (let key in this.state.orderForm){
@@ -97,6 +113,7 @@ class ContactData extends Component {
                     key={formElement.id}
                     elementType={formElement.config.elementType}
                     elementConfig={formElement.config.elementConfig}
+                    changed={(event)=>this.inputChangedHandler(event, formElement.id)}
                     value={formElement.config.value}/>
                 ))}
                 <Button btnType="Success" clicked={this.orderHandler}>ORDER</Button>
