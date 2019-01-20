@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 ingredients: {
                     ...state.ingredients,
-                    [action.ingredientsName]: state.ingredients[action.ingredientsName]+1
+                    [action.ingredientName]: state.ingredients[action.ingredientName]+1
                 }
             }
             break;
@@ -26,7 +26,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 ingredients:{
                     ...state.ingredients,
-                    [action.ingredientsName]: state.ingredients[action.ingredientsName]-1
+                    [action.ingredientName]: state.ingredient[action.ingredientsName]-1
                 }
             }
             break;

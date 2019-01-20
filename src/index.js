@@ -9,7 +9,7 @@ import {Provider} from 'react-redux'
 
 import { BrowserRouter } from 'react-router-dom'
 
-const store = createStore()
+const store = createStore(rootReducer)
 
 const app = (
     <Provider store={store}><BrowserRouter><App/></BrowserRouter></Provider>
