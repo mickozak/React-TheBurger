@@ -28,7 +28,7 @@ class BurgerBuilder extends Component {
   };
 
   componentDidMount = () => {
-    axios
+    /*axios
       .get("https://burger-34af4.firebaseio.com/ingredients.json")
       .then(response => {
         this.setState({
@@ -39,7 +39,7 @@ class BurgerBuilder extends Component {
           this.setState({
               error: true
           })
-      })
+      })*/
   };
 
   updatePurchaseState(ingredients) {
