@@ -2,7 +2,7 @@ import React from 'react'
 
 import classes from './BuildControls.css'
 import BuildControl from './BuilControl/BuildControl'
-import BurgerBuilder from '../../../containers/BurgerBuilder/BurgerBuilder';
+
 
 const controls = [
     {label: 'Salad', type: 'salad'},
