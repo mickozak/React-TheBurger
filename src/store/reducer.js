@@ -1,5 +1,4 @@
 import * as actionTypes from './actions'
-import { stat } from 'fs';
 
 const initialState = {
     ingredients: {
