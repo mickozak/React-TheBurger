@@ -16,24 +16,11 @@ import axios from "../../axios-orders";
 
 class BurgerBuilder extends Component {
   state = {
-    purchasing: false,
-    loading: false,
-    error: false
+    purchasing: false
   };
 
   componentDidMount = () => {
-    /*axios
-      .get("https://burger-34af4.firebaseio.com/ingredients.json")
-      .then(response => {
-        this.setState({
-          ingredients: response.data
-        });
-      })
-      .catch(error=>{
-          this.setState({
-              error: true
-          })
-      })*/
+   
   };
 
   updatePurchaseState(ingredients) {
@@ -98,10 +85,6 @@ class BurgerBuilder extends Component {
           priceProperty={this.props.price}
         />
       );
-    }
-
-    if (this.state.loading) {
-        orderSummary = <Spinner />;
     }
 
     return (
