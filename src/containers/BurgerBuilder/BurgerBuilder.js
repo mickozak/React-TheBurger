@@ -9,7 +9,6 @@ import Spinner from "../../components/UI/Spinner/Spinner";
 import WithErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 
 import {connect} from 'react-redux'
-import * as burgerBuilderActions from '../../store/actions/index'
 import * as actions from '../../store/actions/index'
 
 import axios from "../../axios-orders";
@@ -64,7 +63,6 @@ class BurgerBuilder extends Component {
     };
     for (let key in disabledInfo) {
       disabledInfo[key] = disabledInfo[key] <= 0;
-      console.log(disabledInfo)
     }
 
     let orderSummary = null;
