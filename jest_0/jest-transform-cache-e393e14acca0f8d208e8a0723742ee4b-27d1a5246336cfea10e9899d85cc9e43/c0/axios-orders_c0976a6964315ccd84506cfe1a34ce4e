@@ -1,0 +1,19 @@
+4377f93f5070f12b4fb6b63776889767
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _axios = _interopRequireDefault(require("axios"));
+
+const instance = _axios.default.create({
+  baseURL: 'https://burger-34af4.firebaseio.com/'
+});
+
+var _default = instance;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF4aW9zLW9yZGVycy5qcyJdLCJuYW1lcyI6WyJpbnN0YW5jZSIsImF4aW9zIiwiY3JlYXRlIiwiYmFzZVVSTCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7O0FBRUEsTUFBTUEsUUFBUSxHQUFHQyxlQUFNQyxNQUFOLENBQWE7QUFDMUJDLEVBQUFBLE9BQU8sRUFBRTtBQURpQixDQUFiLENBQWpCOztlQUllSCxRIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGF4aW9zIGZyb20gJ2F4aW9zJ1xuXG5jb25zdCBpbnN0YW5jZSA9IGF4aW9zLmNyZWF0ZSh7XG4gICAgYmFzZVVSTDogJ2h0dHBzOi8vYnVyZ2VyLTM0YWY0LmZpcmViYXNlaW8uY29tLydcbn0pXG5cbmV4cG9ydCBkZWZhdWx0IGluc3RhbmNlIl19

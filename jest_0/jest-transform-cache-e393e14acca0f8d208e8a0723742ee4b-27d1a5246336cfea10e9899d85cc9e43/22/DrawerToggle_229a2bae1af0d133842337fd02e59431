@@ -1,0 +1,47 @@
+eb5431c0037f5c4be85454477deb05e5
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _DrawerToggle = _interopRequireDefault(require("./DrawerToggle.css"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/components/Navigation/SideDrawer/DrawerToggle/DrawerToggle.js";
+
+const DrawerToggle = props => _react.default.createElement("div", {
+  className: _DrawerToggle.default.DrawerToggle,
+  onClick: props.clicked,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: void 0
+}, _react.default.createElement("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: void 0
+}), _react.default.createElement("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: void 0
+}), _react.default.createElement("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: void 0
+}));
+
+var _default = DrawerToggle;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkRyYXdlclRvZ2dsZS5qcyJdLCJuYW1lcyI6WyJEcmF3ZXJUb2dnbGUiLCJwcm9wcyIsImNsYXNzZXMiLCJjbGlja2VkIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7QUFFQTs7OztBQUVBLE1BQU1BLFlBQVksR0FBSUMsS0FBRCxJQUNqQjtBQUFLLEVBQUEsU0FBUyxFQUFFQyxzQkFBUUYsWUFBeEI7QUFBc0MsRUFBQSxPQUFPLEVBQUVDLEtBQUssQ0FBQ0UsT0FBckQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsR0FDSTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxFQURKLEVBRUk7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsRUFGSixFQUdJO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEVBSEosQ0FESjs7ZUFRZUgsWSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcblxuaW1wb3J0IGNsYXNzZXMgZnJvbSAnLi9EcmF3ZXJUb2dnbGUuY3NzJ1xuXG5jb25zdCBEcmF3ZXJUb2dnbGUgPSAocHJvcHMpID0+IChcbiAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5EcmF3ZXJUb2dnbGV9IG9uQ2xpY2s9e3Byb3BzLmNsaWNrZWR9PlxuICAgICAgICA8ZGl2PjwvZGl2PlxuICAgICAgICA8ZGl2PjwvZGl2PlxuICAgICAgICA8ZGl2PjwvZGl2PlxuICAgIDwvZGl2PlxuKVxuXG5leHBvcnQgZGVmYXVsdCBEcmF3ZXJUb2dnbGUiXX0=

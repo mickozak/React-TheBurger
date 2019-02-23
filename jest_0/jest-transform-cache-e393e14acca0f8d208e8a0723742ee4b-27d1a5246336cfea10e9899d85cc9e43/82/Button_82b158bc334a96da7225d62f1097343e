@@ -1,0 +1,30 @@
+7434c11dea4528ebfd1502e096243837
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Button = _interopRequireDefault(require("./Button.css"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/components/UI/Button/Button.js";
+
+const button = props => _react.default.createElement("button", {
+  disabled: props.disabled,
+  className: [_Button.default.Button, _Button.default[props.btnType]].join(' '),
+  onClick: props.clicked,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: void 0
+}, props.children);
+
+var _default = button;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJ1dHRvbi5qcyJdLCJuYW1lcyI6WyJidXR0b24iLCJwcm9wcyIsImRpc2FibGVkIiwiY2xhc3NlcyIsIkJ1dHRvbiIsImJ0blR5cGUiLCJqb2luIiwiY2xpY2tlZCIsImNoaWxkcmVuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7QUFFQTs7OztBQUVBLE1BQU1BLE1BQU0sR0FBSUMsS0FBRCxJQUNYO0FBQ0EsRUFBQSxRQUFRLEVBQUVBLEtBQUssQ0FBQ0MsUUFEaEI7QUFFQSxFQUFBLFNBQVMsRUFBRSxDQUFDQyxnQkFBUUMsTUFBVCxFQUFpQkQsZ0JBQVFGLEtBQUssQ0FBQ0ksT0FBZCxDQUFqQixFQUF5Q0MsSUFBekMsQ0FBOEMsR0FBOUMsQ0FGWDtBQUdBLEVBQUEsT0FBTyxFQUFFTCxLQUFLLENBQUNNLE9BSGY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsR0FHeUJOLEtBQUssQ0FBQ08sUUFIL0IsQ0FESjs7ZUFPZVIsTSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcblxuaW1wb3J0IGNsYXNzZXMgZnJvbSAnLi9CdXR0b24uY3NzJ1xuXG5jb25zdCBidXR0b24gPSAocHJvcHMpID0+IChcbiAgICA8YnV0dG9uIFxuICAgIGRpc2FibGVkPXtwcm9wcy5kaXNhYmxlZH1cbiAgICBjbGFzc05hbWU9e1tjbGFzc2VzLkJ1dHRvbiwgY2xhc3Nlc1twcm9wcy5idG5UeXBlXV0uam9pbignICcpfVxuICAgIG9uQ2xpY2s9e3Byb3BzLmNsaWNrZWR9Pntwcm9wcy5jaGlsZHJlbn08L2J1dHRvbj5cbilcblxuZXhwb3J0IGRlZmF1bHQgYnV0dG9uIl19

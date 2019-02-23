@@ -1,0 +1,85 @@
+7196f62716964de9aedb830946d2a0d0
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Logo = _interopRequireDefault(require("../../Logo/Logo"));
+
+var _NavigationItems = _interopRequireDefault(require("../NavigationItems/NavigationItems"));
+
+var _Backdrop = _interopRequireDefault(require("../../UI/Backdrop/Backdrop"));
+
+var _Aux = _interopRequireDefault(require("../../../hoc/Aux"));
+
+var _SideDrawer = _interopRequireDefault(require("./SideDrawer.css"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/components/Navigation/SideDrawer/SideDrawer.js";
+
+const sideDrawer = props => {
+  let attachedClasses = [_SideDrawer.default.SideDrawer, _SideDrawer.default.Close];
+
+  if (props.open) {
+    attachedClasses = [_SideDrawer.default.SideDrawer, _SideDrawer.default.Open];
+  }
+
+  return _react.default.createElement(_Aux.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: void 0
+  }, _react.default.createElement(_Backdrop.default, {
+    show: props.open,
+    clicked: props.closed,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: void 0
+  }), _react.default.createElement("div", {
+    className: attachedClasses.join(' '),
+    onClick: props.closed,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: void 0
+  }, _react.default.createElement("div", {
+    className: _SideDrawer.default.Logo,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: void 0
+  }, _react.default.createElement(_Logo.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: void 0
+  })), _react.default.createElement("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: void 0
+  }, _react.default.createElement(_NavigationItems.default, {
+    isAuthenticated: props.isAuth,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: void 0
+  }))));
+};
+
+var _default = sideDrawer;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlNpZGVEcmF3ZXIuanMiXSwibmFtZXMiOlsic2lkZURyYXdlciIsInByb3BzIiwiYXR0YWNoZWRDbGFzc2VzIiwiY2xhc3NlcyIsIlNpZGVEcmF3ZXIiLCJDbG9zZSIsIm9wZW4iLCJPcGVuIiwiY2xvc2VkIiwiam9pbiIsIkxvZ28iLCJpc0F1dGgiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUVBOztBQUNBOztBQUNBOztBQUNBOztBQUVBOzs7O0FBRUEsTUFBTUEsVUFBVSxHQUFHQyxLQUFLLElBQUk7QUFDeEIsTUFBSUMsZUFBZSxHQUFHLENBQUNDLG9CQUFRQyxVQUFULEVBQXFCRCxvQkFBUUUsS0FBN0IsQ0FBdEI7O0FBQ0EsTUFBSUosS0FBSyxDQUFDSyxJQUFWLEVBQWU7QUFDWEosSUFBQUEsZUFBZSxHQUFHLENBQUNDLG9CQUFRQyxVQUFULEVBQXFCRCxvQkFBUUksSUFBN0IsQ0FBbEI7QUFDSDs7QUFDSCxTQUNFLDZCQUFDLFlBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDRSw2QkFBQyxpQkFBRDtBQUFVLElBQUEsSUFBSSxFQUFFTixLQUFLLENBQUNLLElBQXRCO0FBQTRCLElBQUEsT0FBTyxFQUFFTCxLQUFLLENBQUNPLE1BQTNDO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLElBREYsRUFFRTtBQUFLLElBQUEsU0FBUyxFQUFFTixlQUFlLENBQUNPLElBQWhCLENBQXFCLEdBQXJCLENBQWhCO0FBQTJDLElBQUEsT0FBTyxFQUFFUixLQUFLLENBQUNPLE1BQTFEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0U7QUFBSyxJQUFBLFNBQVMsRUFBRUwsb0JBQVFPLElBQXhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0UsNkJBQUMsYUFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxJQURGLENBREYsRUFJRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxLQUNFLDZCQUFDLHdCQUFEO0FBQWlCLElBQUEsZUFBZSxFQUFFVCxLQUFLLENBQUNVLE1BQXhDO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLElBREYsQ0FKRixDQUZGLENBREY7QUFhRCxDQWxCRDs7ZUFvQmVYLFUiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5cbmltcG9ydCBMb2dvIGZyb20gXCIuLi8uLi9Mb2dvL0xvZ29cIjtcbmltcG9ydCBOYXZpZ2F0aW9uSXRlbXMgZnJvbSBcIi4uL05hdmlnYXRpb25JdGVtcy9OYXZpZ2F0aW9uSXRlbXNcIjtcbmltcG9ydCBCYWNrZHJvcCBmcm9tIFwiLi4vLi4vVUkvQmFja2Ryb3AvQmFja2Ryb3BcIjtcbmltcG9ydCBBdXggZnJvbSBcIi4uLy4uLy4uL2hvYy9BdXhcIjtcblxuaW1wb3J0IGNsYXNzZXMgZnJvbSBcIi4vU2lkZURyYXdlci5jc3NcIjtcblxuY29uc3Qgc2lkZURyYXdlciA9IHByb3BzID0+IHtcbiAgICBsZXQgYXR0YWNoZWRDbGFzc2VzID0gW2NsYXNzZXMuU2lkZURyYXdlciwgY2xhc3Nlcy5DbG9zZV1cbiAgICBpZiAocHJvcHMub3Blbil7XG4gICAgICAgIGF0dGFjaGVkQ2xhc3NlcyA9IFtjbGFzc2VzLlNpZGVEcmF3ZXIsIGNsYXNzZXMuT3Blbl1cbiAgICB9XG4gIHJldHVybiAoXG4gICAgPEF1eD5cbiAgICAgIDxCYWNrZHJvcCBzaG93PXtwcm9wcy5vcGVufSBjbGlja2VkPXtwcm9wcy5jbG9zZWR9Lz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPXthdHRhY2hlZENsYXNzZXMuam9pbignICcpfSBvbkNsaWNrPXtwcm9wcy5jbG9zZWR9PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5Mb2dvfT5cbiAgICAgICAgICA8TG9nbyAvPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPG5hdj5cbiAgICAgICAgICA8TmF2aWdhdGlvbkl0ZW1zIGlzQXV0aGVudGljYXRlZD17cHJvcHMuaXNBdXRofS8+XG4gICAgICAgIDwvbmF2PlxuICAgICAgPC9kaXY+XG4gICAgPC9BdXg+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBzaWRlRHJhd2VyO1xuIl19

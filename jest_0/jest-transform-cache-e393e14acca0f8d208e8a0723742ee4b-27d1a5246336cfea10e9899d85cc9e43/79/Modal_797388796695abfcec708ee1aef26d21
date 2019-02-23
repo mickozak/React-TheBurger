@@ -1,0 +1,61 @@
+1734e7000597211588e22915723e32c5
+"use strict";
+
+var _interopRequireWildcard = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Modal = _interopRequireDefault(require("./Modal.css"));
+
+var _Aux = _interopRequireDefault(require("../../../hoc/Aux"));
+
+var _Backdrop = _interopRequireDefault(require("../Backdrop/Backdrop"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/components/UI/Modal/Modal.js";
+
+class Modal extends _react.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
+  }
+
+  render() {
+    return _react.default.createElement(_Aux.default, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, _react.default.createElement(_Backdrop.default, {
+      show: this.props.show,
+      clicked: this.props.modalClosed,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }), _react.default.createElement("div", {
+      className: _Modal.default.Modal,
+      style: {
+        transform: this.props.show ? "translateY(0)" : "translateY(-100vh)",
+        opacity: this.props.show ? "1" : "0"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, this.props.children));
+  }
+
+}
+
+var _default = Modal;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIk1vZGFsLmpzIl0sIm5hbWVzIjpbIk1vZGFsIiwiQ29tcG9uZW50Iiwic2hvdWxkQ29tcG9uZW50VXBkYXRlIiwibmV4dFByb3BzIiwibmV4dFN0YXRlIiwic2hvdyIsInByb3BzIiwiY2hpbGRyZW4iLCJyZW5kZXIiLCJtb2RhbENsb3NlZCIsImNsYXNzZXMiLCJ0cmFuc2Zvcm0iLCJvcGFjaXR5Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOztBQUVBOztBQUVBOztBQUNBOzs7O0FBRUEsTUFBTUEsS0FBTixTQUFvQkMsZ0JBQXBCLENBQThCO0FBQzVCQyxFQUFBQSxxQkFBcUIsQ0FBQ0MsU0FBRCxFQUFZQyxTQUFaLEVBQXVCO0FBQzFDLFdBQU9ELFNBQVMsQ0FBQ0UsSUFBVixLQUFtQixLQUFLQyxLQUFMLENBQVdELElBQTlCLElBQXNDRixTQUFTLENBQUNJLFFBQVYsS0FBdUIsS0FBS0QsS0FBTCxDQUFXQyxRQUEvRTtBQUNEOztBQUVEQyxFQUFBQSxNQUFNLEdBQUc7QUFDUCxXQUNFLDZCQUFDLFlBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FDRSw2QkFBQyxpQkFBRDtBQUFVLE1BQUEsSUFBSSxFQUFFLEtBQUtGLEtBQUwsQ0FBV0QsSUFBM0I7QUFBaUMsTUFBQSxPQUFPLEVBQUUsS0FBS0MsS0FBTCxDQUFXRyxXQUFyRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxNQURGLEVBRUU7QUFDRSxNQUFBLFNBQVMsRUFBRUMsZUFBUVYsS0FEckI7QUFFRSxNQUFBLEtBQUssRUFBRTtBQUNMVyxRQUFBQSxTQUFTLEVBQUUsS0FBS0wsS0FBTCxDQUFXRCxJQUFYLEdBQWtCLGVBQWxCLEdBQW9DLG9CQUQxQztBQUVMTyxRQUFBQSxPQUFPLEVBQUUsS0FBS04sS0FBTCxDQUFXRCxJQUFYLEdBQWtCLEdBQWxCLEdBQXdCO0FBRjVCLE9BRlQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FPRyxLQUFLQyxLQUFMLENBQVdDLFFBUGQsQ0FGRixDQURGO0FBY0Q7O0FBcEIyQjs7ZUF1QmZQLEsiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgQ29tcG9uZW50IH0gZnJvbSBcInJlYWN0XCI7XG5cbmltcG9ydCBjbGFzc2VzIGZyb20gXCIuL01vZGFsLmNzc1wiO1xuXG5pbXBvcnQgQXV4IGZyb20gXCIuLi8uLi8uLi9ob2MvQXV4XCI7XG5pbXBvcnQgQmFja2Ryb3AgZnJvbSBcIi4uL0JhY2tkcm9wL0JhY2tkcm9wXCI7XG5cbmNsYXNzIE1vZGFsIGV4dGVuZHMgQ29tcG9uZW50IHtcbiAgc2hvdWxkQ29tcG9uZW50VXBkYXRlKG5leHRQcm9wcywgbmV4dFN0YXRlKSB7XG4gICAgcmV0dXJuIG5leHRQcm9wcy5zaG93ICE9PSB0aGlzLnByb3BzLnNob3cgfHwgbmV4dFByb3BzLmNoaWxkcmVuICE9PSB0aGlzLnByb3BzLmNoaWxkcmVuO1xuICB9XG5cbiAgcmVuZGVyKCkge1xuICAgIHJldHVybiAoXG4gICAgICA8QXV4PlxuICAgICAgICA8QmFja2Ryb3Agc2hvdz17dGhpcy5wcm9wcy5zaG93fSBjbGlja2VkPXt0aGlzLnByb3BzLm1vZGFsQ2xvc2VkfSAvPlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgY2xhc3NOYW1lPXtjbGFzc2VzLk1vZGFsfVxuICAgICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgICB0cmFuc2Zvcm06IHRoaXMucHJvcHMuc2hvdyA/IFwidHJhbnNsYXRlWSgwKVwiIDogXCJ0cmFuc2xhdGVZKC0xMDB2aClcIixcbiAgICAgICAgICAgIG9wYWNpdHk6IHRoaXMucHJvcHMuc2hvdyA/IFwiMVwiIDogXCIwXCJcbiAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAge3RoaXMucHJvcHMuY2hpbGRyZW59XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9BdXg+XG4gICAgKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBNb2RhbDtcbiJdfQ==

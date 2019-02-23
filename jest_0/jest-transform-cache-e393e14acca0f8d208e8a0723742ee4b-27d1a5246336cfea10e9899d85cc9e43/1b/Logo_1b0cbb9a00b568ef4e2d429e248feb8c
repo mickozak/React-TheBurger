@@ -1,0 +1,41 @@
+2a5a712151c92e13c09123eaabd7d173
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _burgerLogo = _interopRequireDefault(require("../../assets/images/burger-logo.png"));
+
+var _Logo = _interopRequireDefault(require("./Logo.css"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/components/Logo/Logo.js";
+
+const logo = props => _react.default.createElement("div", {
+  className: _Logo.default.Logo,
+  style: {
+    height: props.height
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: void 0
+}, _react.default.createElement("img", {
+  src: _burgerLogo.default,
+  alt: "My Burger",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: void 0
+}));
+
+var _default = logo;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkxvZ28uanMiXSwibmFtZXMiOlsibG9nbyIsInByb3BzIiwiY2xhc3NlcyIsIkxvZ28iLCJoZWlnaHQiLCJidXJnZXJMb2dvIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7QUFFQTs7QUFFQTs7OztBQUVBLE1BQU1BLElBQUksR0FBSUMsS0FBRCxJQUNUO0FBQUssRUFBQSxTQUFTLEVBQUVDLGNBQVFDLElBQXhCO0FBQThCLEVBQUEsS0FBSyxFQUFFO0FBQUNDLElBQUFBLE1BQU0sRUFBRUgsS0FBSyxDQUFDRztBQUFmLEdBQXJDO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEdBQ0k7QUFBSyxFQUFBLEdBQUcsRUFBRUMsbUJBQVY7QUFBc0IsRUFBQSxHQUFHLEVBQUMsV0FBMUI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsRUFESixDQURKOztlQU1lTCxJIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xuXG5pbXBvcnQgYnVyZ2VyTG9nbyBmcm9tICcuLi8uLi9hc3NldHMvaW1hZ2VzL2J1cmdlci1sb2dvLnBuZydcblxuaW1wb3J0IGNsYXNzZXMgZnJvbSAnLi9Mb2dvLmNzcydcblxuY29uc3QgbG9nbyA9IChwcm9wcykgPT4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLkxvZ299IHN0eWxlPXt7aGVpZ2h0OiBwcm9wcy5oZWlnaHR9fT5cbiAgICAgICAgPGltZyBzcmM9e2J1cmdlckxvZ299IGFsdD1cIk15IEJ1cmdlclwiLz5cbiAgICA8L2Rpdj5cbilcblxuZXhwb3J0IGRlZmF1bHQgbG9nbyJdfQ==

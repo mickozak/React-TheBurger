@@ -1,0 +1,28 @@
+6a5d87a3c90ba3a7178d211e01673d60
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Spinner = _interopRequireDefault(require("./Spinner.css"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/components/UI/Spinner/Spinner.js";
+
+const spinner = () => _react.default.createElement("div", {
+  className: _Spinner.default.Loader,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: void 0
+}, "Loading...");
+
+var _default = spinner;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlNwaW5uZXIuanMiXSwibmFtZXMiOlsic3Bpbm5lciIsImNsYXNzZXMiLCJMb2FkZXIiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUVBOzs7O0FBRUEsTUFBTUEsT0FBTyxHQUFHLE1BQU07QUFBSyxFQUFBLFNBQVMsRUFBRUMsaUJBQVFDLE1BQXhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQUF0Qjs7ZUFFZUYsTyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcblxuaW1wb3J0IGNsYXNzZXMgZnJvbSBcIi4vU3Bpbm5lci5jc3NcIjtcblxuY29uc3Qgc3Bpbm5lciA9ICgpID0+IDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLkxvYWRlcn0+TG9hZGluZy4uLjwvZGl2PjtcblxuZXhwb3J0IGRlZmF1bHQgc3Bpbm5lcjtcbiJdfQ==

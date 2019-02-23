@@ -1,0 +1,1 @@
+{"version":3,"sources":["axios-orders.js"],"names":["instance","axios","create","baseURL"],"mappings":";;;;;;;;;AAAA;;AAEA,MAAMA,QAAQ,GAAGC,eAAMC,MAAN,CAAa;AAC1BC,EAAAA,OAAO,EAAE;AADiB,CAAb,CAAjB;;eAIeH,Q","sourcesContent":["import axios from 'axios'\n\nconst instance = axios.create({\n    baseURL: 'https://burger-34af4.firebaseio.com/'\n})\n\nexport default instance"]}

@@ -1,0 +1,172 @@
+c2484be796f8d5f9e40914428e94fe72
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+var _interopRequireWildcard3 = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _interopRequireWildcard2 = _interopRequireDefault(require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireWildcard"));
+
+var _react = _interopRequireWildcard3(require("react"));
+
+require("./App.css");
+
+var _Layout = _interopRequireDefault(require("./components/Layout/Layout"));
+
+var _BurgerBuilder = _interopRequireDefault(require("./containers/BurgerBuilder/BurgerBuilder"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _Logout = _interopRequireDefault(require("./containers/Auth/Logout/Logout"));
+
+var _reactRedux = require("react-redux");
+
+var actions = _interopRequireWildcard3(require("./store/actions/index"));
+
+var _asyncComponent = _interopRequireDefault(require("./hoc/asyncComponent/asyncComponent"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/App.js";
+const asyncCheckout = (0, _asyncComponent.default)(() => {
+  return Promise.resolve().then(() => (0, _interopRequireWildcard2.default)(require('./containers/Checkout/Checkout')));
+});
+const asyncOrders = (0, _asyncComponent.default)(() => {
+  return Promise.resolve().then(() => (0, _interopRequireWildcard2.default)(require('./containers/Orders/Orders')));
+});
+const asyncAuth = (0, _asyncComponent.default)(() => {
+  return Promise.resolve().then(() => (0, _interopRequireWildcard2.default)(require('./containers/Auth/Auth')));
+});
+
+class App extends _react.Component {
+  componentDidMount() {
+    this.props.onTryAutoSignup();
+  }
+
+  render() {
+    let routes = _react.default.createElement(_reactRouterDom.Switch, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, _react.default.createElement(_reactRouterDom.Route, {
+      path: "/auth",
+      component: asyncAuth,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }), _react.default.createElement(_reactRouterDom.Route, {
+      path: "/",
+      exact: true,
+      component: _BurgerBuilder.default,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }), _react.default.createElement(_reactRouterDom.Redirect, {
+      to: "/",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }));
+
+    if (this.props.isAuthenticated) {
+      routes = _react.default.createElement(_reactRouterDom.Switch, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, _react.default.createElement(_reactRouterDom.Route, {
+        path: "/checkout",
+        component: asyncCheckout,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }), _react.default.createElement(_reactRouterDom.Route, {
+        path: "/orders",
+        component: asyncOrders,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }), _react.default.createElement(_reactRouterDom.Route, {
+        path: "/logout",
+        component: _Logout.default,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }), _react.default.createElement(_reactRouterDom.Route, {
+        path: "/auth",
+        component: asyncAuth,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }), _react.default.createElement(_reactRouterDom.Route, {
+        path: "/",
+        exact: true,
+        component: _BurgerBuilder.default,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }), _react.default.createElement(_reactRouterDom.Redirect, {
+        to: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }));
+    }
+
+    return _react.default.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, _react.default.createElement(_Layout.default, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, routes));
+  }
+
+}
+
+const mapStateToProps = state => {
+  return {
+    isAuthenticated: state.auth.token !== null
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onTryAutoSignup: () => dispatch(actions.authCheckState())
+  };
+};
+
+var _default = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(App));
+
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFwcC5qcyJdLCJuYW1lcyI6WyJhc3luY0NoZWNrb3V0IiwiYXN5bmNPcmRlcnMiLCJhc3luY0F1dGgiLCJBcHAiLCJDb21wb25lbnQiLCJjb21wb25lbnREaWRNb3VudCIsInByb3BzIiwib25UcnlBdXRvU2lnbnVwIiwicmVuZGVyIiwicm91dGVzIiwiQnVyZ2VyQnVpbGRlciIsImlzQXV0aGVudGljYXRlZCIsIkxvZ291dCIsIm1hcFN0YXRlVG9Qcm9wcyIsInN0YXRlIiwiYXV0aCIsInRva2VuIiwibWFwRGlzcGF0Y2hUb1Byb3BzIiwiZGlzcGF0Y2giLCJhY3Rpb25zIiwiYXV0aENoZWNrU3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFFQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7O0FBRUEsTUFBTUEsYUFBYSxHQUFHLDZCQUFlLE1BQUk7QUFDdkMsb0ZBQWMsZ0NBQWQ7QUFDRCxDQUZxQixDQUF0QjtBQUlBLE1BQU1DLFdBQVcsR0FBRyw2QkFBZSxNQUFJO0FBQ3JDLG9GQUFjLDRCQUFkO0FBQ0QsQ0FGbUIsQ0FBcEI7QUFJQSxNQUFNQyxTQUFTLEdBQUcsNkJBQWUsTUFBSTtBQUNuQyxvRkFBYyx3QkFBZDtBQUNELENBRmlCLENBQWxCOztBQUlBLE1BQU1DLEdBQU4sU0FBa0JDLGdCQUFsQixDQUE0QjtBQUMxQkMsRUFBQUEsaUJBQWlCLEdBQUU7QUFDakIsU0FBS0MsS0FBTCxDQUFXQyxlQUFYO0FBQ0Q7O0FBRURDLEVBQUFBLE1BQU0sR0FBRztBQUVQLFFBQUlDLE1BQU0sR0FDUiw2QkFBQyxzQkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxPQUNFLDZCQUFDLHFCQUFEO0FBQU8sTUFBQSxJQUFJLEVBQUMsT0FBWjtBQUFvQixNQUFBLFNBQVMsRUFBRVAsU0FBL0I7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsTUFERixFQUVFLDZCQUFDLHFCQUFEO0FBQU8sTUFBQSxJQUFJLEVBQUMsR0FBWjtBQUFnQixNQUFBLEtBQUssTUFBckI7QUFBc0IsTUFBQSxTQUFTLEVBQUVRLHNCQUFqQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxNQUZGLEVBR0UsNkJBQUMsd0JBQUQ7QUFBVSxNQUFBLEVBQUUsRUFBQyxHQUFiO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE1BSEYsQ0FERjs7QUFRQSxRQUFHLEtBQUtKLEtBQUwsQ0FBV0ssZUFBZCxFQUE4QjtBQUM1QkYsTUFBQUEsTUFBTSxHQUNKLDZCQUFDLHNCQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBQ0ksNkJBQUMscUJBQUQ7QUFBTyxRQUFBLElBQUksRUFBQyxXQUFaO0FBQXdCLFFBQUEsU0FBUyxFQUFFVCxhQUFuQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxRQURKLEVBRUksNkJBQUMscUJBQUQ7QUFBTyxRQUFBLElBQUksRUFBQyxTQUFaO0FBQXNCLFFBQUEsU0FBUyxFQUFFQyxXQUFqQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxRQUZKLEVBR0ksNkJBQUMscUJBQUQ7QUFBTyxRQUFBLElBQUksRUFBQyxTQUFaO0FBQXNCLFFBQUEsU0FBUyxFQUFFVyxlQUFqQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxRQUhKLEVBSUksNkJBQUMscUJBQUQ7QUFBTyxRQUFBLElBQUksRUFBQyxPQUFaO0FBQW9CLFFBQUEsU0FBUyxFQUFFVixTQUEvQjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxRQUpKLEVBS0ksNkJBQUMscUJBQUQ7QUFBTyxRQUFBLElBQUksRUFBQyxHQUFaO0FBQWdCLFFBQUEsS0FBSyxNQUFyQjtBQUFzQixRQUFBLFNBQVMsRUFBRVEsc0JBQWpDO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFFBTEosRUFNSSw2QkFBQyx3QkFBRDtBQUFVLFFBQUEsRUFBRSxFQUFDLEdBQWI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsUUFOSixDQURGO0FBVUQ7O0FBRUQsV0FDRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxPQUNFLDZCQUFDLGVBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FDR0QsTUFESCxDQURGLENBREY7QUFPRDs7QUFuQ3lCOztBQXNDNUIsTUFBTUksZUFBZSxHQUFHQyxLQUFLLElBQUk7QUFDL0IsU0FBTTtBQUNKSCxJQUFBQSxlQUFlLEVBQUVHLEtBQUssQ0FBQ0MsSUFBTixDQUFXQyxLQUFYLEtBQXFCO0FBRGxDLEdBQU47QUFHRCxDQUpEOztBQU1BLE1BQU1DLGtCQUFrQixHQUFHQyxRQUFRLElBQUk7QUFDckMsU0FBTTtBQUNKWCxJQUFBQSxlQUFlLEVBQUUsTUFBTVcsUUFBUSxDQUFDQyxPQUFPLENBQUNDLGNBQVIsRUFBRDtBQUQzQixHQUFOO0FBR0QsQ0FKRDs7ZUFNZSxnQ0FBVyx5QkFBUVAsZUFBUixFQUF3Qkksa0JBQXhCLEVBQTRDZCxHQUE1QyxDQUFYLEMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgQ29tcG9uZW50IH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0ICcuL0FwcC5jc3MnO1xuXG5pbXBvcnQgTGF5b3V0IGZyb20gJy4vY29tcG9uZW50cy9MYXlvdXQvTGF5b3V0J1xuaW1wb3J0IEJ1cmdlckJ1aWxkZXIgZnJvbSAnLi9jb250YWluZXJzL0J1cmdlckJ1aWxkZXIvQnVyZ2VyQnVpbGRlcidcbmltcG9ydCB7IFJvdXRlLCBTd2l0Y2gsIHdpdGhSb3V0ZXIsIFJlZGlyZWN0IH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSdcbmltcG9ydCBMb2dvdXQgZnJvbSAnLi9jb250YWluZXJzL0F1dGgvTG9nb3V0L0xvZ291dCdcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tICdyZWFjdC1yZWR1eCdcbmltcG9ydCAqIGFzIGFjdGlvbnMgZnJvbSAnLi9zdG9yZS9hY3Rpb25zL2luZGV4J1xuaW1wb3J0IGFzeW5jQ29tcG9uZW50IGZyb20gJy4vaG9jL2FzeW5jQ29tcG9uZW50L2FzeW5jQ29tcG9uZW50J1xuXG5jb25zdCBhc3luY0NoZWNrb3V0ID0gYXN5bmNDb21wb25lbnQoKCk9PntcbiAgcmV0dXJuIGltcG9ydCgnLi9jb250YWluZXJzL0NoZWNrb3V0L0NoZWNrb3V0Jylcbn0pXG5cbmNvbnN0IGFzeW5jT3JkZXJzID0gYXN5bmNDb21wb25lbnQoKCk9PntcbiAgcmV0dXJuIGltcG9ydCgnLi9jb250YWluZXJzL09yZGVycy9PcmRlcnMnKVxufSlcblxuY29uc3QgYXN5bmNBdXRoID0gYXN5bmNDb21wb25lbnQoKCk9PntcbiAgcmV0dXJuIGltcG9ydCgnLi9jb250YWluZXJzL0F1dGgvQXV0aCcpXG59KVxuXG5jbGFzcyBBcHAgZXh0ZW5kcyBDb21wb25lbnQge1xuICBjb21wb25lbnREaWRNb3VudCgpe1xuICAgIHRoaXMucHJvcHMub25UcnlBdXRvU2lnbnVwKClcbiAgfVxuXG4gIHJlbmRlcigpIHtcblxuICAgIGxldCByb3V0ZXMgPSAoXG4gICAgICA8U3dpdGNoPlxuICAgICAgICA8Um91dGUgcGF0aD1cIi9hdXRoXCIgY29tcG9uZW50PXthc3luY0F1dGh9Lz5cbiAgICAgICAgPFJvdXRlIHBhdGg9XCIvXCIgZXhhY3QgY29tcG9uZW50PXtCdXJnZXJCdWlsZGVyfS8+XG4gICAgICAgIDxSZWRpcmVjdCB0bz0nLycvPlxuICAgICAgPC9Td2l0Y2g+XG4gICAgKVxuXG4gICAgaWYodGhpcy5wcm9wcy5pc0F1dGhlbnRpY2F0ZWQpe1xuICAgICAgcm91dGVzPShcbiAgICAgICAgPFN3aXRjaD5cbiAgICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiL2NoZWNrb3V0XCIgY29tcG9uZW50PXthc3luY0NoZWNrb3V0fS8+XG4gICAgICAgICAgICA8Um91dGUgcGF0aD1cIi9vcmRlcnNcIiBjb21wb25lbnQ9e2FzeW5jT3JkZXJzfS8+XG4gICAgICAgICAgICA8Um91dGUgcGF0aD1cIi9sb2dvdXRcIiBjb21wb25lbnQ9e0xvZ291dH0vPlxuICAgICAgICAgICAgPFJvdXRlIHBhdGg9XCIvYXV0aFwiIGNvbXBvbmVudD17YXN5bmNBdXRofS8+XG4gICAgICAgICAgICA8Um91dGUgcGF0aD1cIi9cIiBleGFjdCBjb21wb25lbnQ9e0J1cmdlckJ1aWxkZXJ9Lz5cbiAgICAgICAgICAgIDxSZWRpcmVjdCB0bz0nLycvPlxuICAgICAgICA8L1N3aXRjaD5cbiAgICAgIClcbiAgICB9XG5cbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPExheW91dD5cbiAgICAgICAgICB7cm91dGVzfVxuICAgICAgICA8L0xheW91dD5cbiAgICAgIDwvZGl2PlxuICAgICk7XG4gIH1cbn1cblxuY29uc3QgbWFwU3RhdGVUb1Byb3BzID0gc3RhdGUgPT4ge1xuICByZXR1cm57XG4gICAgaXNBdXRoZW50aWNhdGVkOiBzdGF0ZS5hdXRoLnRva2VuICE9PSBudWxsXG4gIH1cbn1cblxuY29uc3QgbWFwRGlzcGF0Y2hUb1Byb3BzID0gZGlzcGF0Y2ggPT4ge1xuICByZXR1cm57XG4gICAgb25UcnlBdXRvU2lnbnVwOiAoKSA9PiBkaXNwYXRjaChhY3Rpb25zLmF1dGhDaGVja1N0YXRlKCkpXG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgd2l0aFJvdXRlcihjb25uZWN0KG1hcFN0YXRlVG9Qcm9wcyxtYXBEaXNwYXRjaFRvUHJvcHMpKEFwcCkpO1xuIl19

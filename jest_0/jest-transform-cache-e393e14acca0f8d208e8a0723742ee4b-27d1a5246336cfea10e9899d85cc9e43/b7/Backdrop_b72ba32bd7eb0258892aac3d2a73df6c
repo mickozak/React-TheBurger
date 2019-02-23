@@ -1,0 +1,29 @@
+9c4a3eeb30bd564277d089065caf5fb1
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Backdrop = _interopRequireDefault(require("./Backdrop.css"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/components/UI/Backdrop/Backdrop.js";
+
+const backdrop = props => props.show ? _react.default.createElement("div", {
+  className: _Backdrop.default.Backdrop,
+  onClick: props.clicked,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: void 0
+}) : null;
+
+var _default = backdrop;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJhY2tkcm9wLmpzIl0sIm5hbWVzIjpbImJhY2tkcm9wIiwicHJvcHMiLCJzaG93IiwiY2xhc3NlcyIsIkJhY2tkcm9wIiwiY2xpY2tlZCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7O0FBRUE7Ozs7QUFFQSxNQUFNQSxRQUFRLEdBQUlDLEtBQUQsSUFDYkEsS0FBSyxDQUFDQyxJQUFOLEdBQWE7QUFBSyxFQUFBLFNBQVMsRUFBRUMsa0JBQVFDLFFBQXhCO0FBQWtDLEVBQUEsT0FBTyxFQUFFSCxLQUFLLENBQUNJLE9BQWpEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEVBQWIsR0FBZ0YsSUFEcEY7O2VBSWVMLFEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5cbmltcG9ydCBjbGFzc2VzIGZyb20gJy4vQmFja2Ryb3AuY3NzJ1xuXG5jb25zdCBiYWNrZHJvcCA9IChwcm9wcykgPT4gKFxuICAgIHByb3BzLnNob3cgPyA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5CYWNrZHJvcH0gb25DbGljaz17cHJvcHMuY2xpY2tlZH0+PC9kaXY+IDogbnVsbFxuKVxuXG5leHBvcnQgZGVmYXVsdCBiYWNrZHJvcCJdfQ==

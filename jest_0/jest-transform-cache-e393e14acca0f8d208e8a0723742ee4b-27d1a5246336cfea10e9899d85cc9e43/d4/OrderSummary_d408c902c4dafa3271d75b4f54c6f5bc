@@ -1,0 +1,107 @@
+6a8cbd627ed2661eb30fc9f8d26bd9a3
+"use strict";
+
+var _interopRequireWildcard = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Aux = _interopRequireDefault(require("../../hoc/Aux"));
+
+var _Button = _interopRequireDefault(require("../UI/Button/Button"));
+
+var _jsxFileName = "/home/programowanie4/Pulpit/Luty/React-TheBurger/src/components/OrderSummary/OrderSummary.js";
+
+class OrderSummary extends _react.Component {
+  render() {
+    const ingredientSummary = Object.keys(this.props.ingredients).map(igKey => {
+      return _react.default.createElement("li", {
+        key: igKey,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, _react.default.createElement("span", {
+        style: {
+          textTransform: "capitalize"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, igKey, ": ", this.props.ingredients[igKey]));
+    });
+    return _react.default.createElement(_Aux.default, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, _react.default.createElement("h3", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, "Your Order:"), _react.default.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, "A delicious burger with the following ingredients:"), _react.default.createElement("ul", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, ingredientSummary), _react.default.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, _react.default.createElement("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, "Current Price: ", this.props.priceProperty.toFixed(2))), _react.default.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, "Continue you checkout?"), _react.default.createElement(_Button.default, {
+      btnType: "Danger",
+      clicked: this.props.purchaseCanceled,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, "CANCEL"), _react.default.createElement(_Button.default, {
+      btnType: "Success",
+      clicked: this.props.purchaseContinued,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, "CONTINUE"));
+  }
+
+}
+
+var _default = OrderSummary;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIk9yZGVyU3VtbWFyeS5qcyJdLCJuYW1lcyI6WyJPcmRlclN1bW1hcnkiLCJDb21wb25lbnQiLCJyZW5kZXIiLCJpbmdyZWRpZW50U3VtbWFyeSIsIk9iamVjdCIsImtleXMiLCJwcm9wcyIsImluZ3JlZGllbnRzIiwibWFwIiwiaWdLZXkiLCJ0ZXh0VHJhbnNmb3JtIiwicHJpY2VQcm9wZXJ0eSIsInRvRml4ZWQiLCJwdXJjaGFzZUNhbmNlbGVkIiwicHVyY2hhc2VDb250aW51ZWQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQUE7O0FBRUE7O0FBRUE7Ozs7QUFFQSxNQUFNQSxZQUFOLFNBQTJCQyxnQkFBM0IsQ0FBcUM7QUFDbkNDLEVBQUFBLE1BQU0sR0FBRztBQUNQLFVBQU1DLGlCQUFpQixHQUFHQyxNQUFNLENBQUNDLElBQVAsQ0FBWSxLQUFLQyxLQUFMLENBQVdDLFdBQXZCLEVBQW9DQyxHQUFwQyxDQUF3Q0MsS0FBSyxJQUFJO0FBQ3pFLGFBQ0U7QUFBSSxRQUFBLEdBQUcsRUFBRUEsS0FBVDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQUNFO0FBQU0sUUFBQSxLQUFLLEVBQUU7QUFBRUMsVUFBQUEsYUFBYSxFQUFFO0FBQWpCLFNBQWI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0FDR0QsS0FESCxRQUNZLEtBQUtILEtBQUwsQ0FBV0MsV0FBWCxDQUF1QkUsS0FBdkIsQ0FEWixDQURGLENBREY7QUFPRCxLQVJ5QixDQUExQjtBQVNBLFdBQ0UsNkJBQUMsWUFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxPQUNFO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLHFCQURGLEVBRUU7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsNERBRkYsRUFHRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxPQUFLTixpQkFBTCxDQUhGLEVBSUU7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FDRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSwwQkFBd0IsS0FBS0csS0FBTCxDQUFXSyxhQUFYLENBQXlCQyxPQUF6QixDQUFpQyxDQUFqQyxDQUF4QixDQURGLENBSkYsRUFPRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQ0FQRixFQVFFLDZCQUFDLGVBQUQ7QUFBUSxNQUFBLE9BQU8sRUFBQyxRQUFoQjtBQUF5QixNQUFBLE9BQU8sRUFBRSxLQUFLTixLQUFMLENBQVdPLGdCQUE3QztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFSRixFQVdFLDZCQUFDLGVBQUQ7QUFBUSxNQUFBLE9BQU8sRUFBQyxTQUFoQjtBQUEwQixNQUFBLE9BQU8sRUFBRSxLQUFLUCxLQUFMLENBQVdRLGlCQUE5QztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFYRixDQURGO0FBaUJEOztBQTVCa0M7O2VBK0J0QmQsWSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tIFwicmVhY3RcIjtcblxuaW1wb3J0IEF1eCBmcm9tIFwiLi4vLi4vaG9jL0F1eFwiO1xuXG5pbXBvcnQgQnV0dG9uIGZyb20gXCIuLi9VSS9CdXR0b24vQnV0dG9uXCI7XG5cbmNsYXNzIE9yZGVyU3VtbWFyeSBleHRlbmRzIENvbXBvbmVudCB7XG4gIHJlbmRlcigpIHtcbiAgICBjb25zdCBpbmdyZWRpZW50U3VtbWFyeSA9IE9iamVjdC5rZXlzKHRoaXMucHJvcHMuaW5ncmVkaWVudHMpLm1hcChpZ0tleSA9PiB7XG4gICAgICByZXR1cm4gKFxuICAgICAgICA8bGkga2V5PXtpZ0tleX0+XG4gICAgICAgICAgPHNwYW4gc3R5bGU9e3sgdGV4dFRyYW5zZm9ybTogXCJjYXBpdGFsaXplXCIgfX0+XG4gICAgICAgICAgICB7aWdLZXl9OiB7dGhpcy5wcm9wcy5pbmdyZWRpZW50c1tpZ0tleV19XG4gICAgICAgICAgPC9zcGFuPlxuICAgICAgICA8L2xpPlxuICAgICAgKTtcbiAgICB9KTtcbiAgICByZXR1cm4gKFxuICAgICAgPEF1eD5cbiAgICAgICAgPGgzPllvdXIgT3JkZXI6PC9oMz5cbiAgICAgICAgPHA+QSBkZWxpY2lvdXMgYnVyZ2VyIHdpdGggdGhlIGZvbGxvd2luZyBpbmdyZWRpZW50czo8L3A+XG4gICAgICAgIDx1bD57aW5ncmVkaWVudFN1bW1hcnl9PC91bD5cbiAgICAgICAgPHA+XG4gICAgICAgICAgPHN0cm9uZz5DdXJyZW50IFByaWNlOiB7dGhpcy5wcm9wcy5wcmljZVByb3BlcnR5LnRvRml4ZWQoMil9PC9zdHJvbmc+XG4gICAgICAgIDwvcD5cbiAgICAgICAgPHA+Q29udGludWUgeW91IGNoZWNrb3V0PzwvcD5cbiAgICAgICAgPEJ1dHRvbiBidG5UeXBlPVwiRGFuZ2VyXCIgY2xpY2tlZD17dGhpcy5wcm9wcy5wdXJjaGFzZUNhbmNlbGVkfT5cbiAgICAgICAgICBDQU5DRUxcbiAgICAgICAgPC9CdXR0b24+XG4gICAgICAgIDxCdXR0b24gYnRuVHlwZT1cIlN1Y2Nlc3NcIiBjbGlja2VkPXt0aGlzLnByb3BzLnB1cmNoYXNlQ29udGludWVkfT5cbiAgICAgICAgICBDT05USU5VRVxuICAgICAgICA8L0J1dHRvbj5cbiAgICAgIDwvQXV4PlxuICAgICk7XG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgT3JkZXJTdW1tYXJ5O1xuIl19

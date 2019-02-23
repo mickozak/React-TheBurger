@@ -1,0 +1,21 @@
+04b49856cde5e901163ab18d20f1b50d
+"use strict";
+
+var _interopRequireDefault = require("/home/programowanie4/Pulpit/Luty/React-TheBurger/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+var _react = _interopRequireDefault(require("react"));
+
+var _BurgerBuilder = require("./BurgerBuilder");
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _NavigationItems = _interopRequireDefault(require("./NavigationItems"));
+
+var _NavigationItem = _interopRequireDefault(require("./NavigationItem/NavigationItem"));
+
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact.default()
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJ1cmdlckJ1aWxkZXIudGVzdC5qcyJdLCJuYW1lcyI6WyJhZGFwdGVyIiwiQWRhcHRlciJdLCJtYXBwaW5ncyI6Ijs7OztBQUFBOztBQUNBOztBQUVBOztBQUNBOztBQUVBOztBQUNBOztBQUVBLHVCQUFVO0FBQUNBLEVBQUFBLE9BQU8sRUFBRSxJQUFJQywyQkFBSjtBQUFWLENBQVYiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHtCdXJnZXJCdWlsZGVyfSBmcm9tICcuL0J1cmdlckJ1aWxkZXInXG5cbmltcG9ydCB7IGNvbmZpZ3VyZSwgc2hhbGxvdyB9IGZyb20gJ2VuenltZSc7XG5pbXBvcnQgQWRhcHRlciBmcm9tICdlbnp5bWUtYWRhcHRlci1yZWFjdC0xNic7XG5cbmltcG9ydCBOYXZpZ2F0aW9uSXRlbXMgZnJvbSAnLi9OYXZpZ2F0aW9uSXRlbXMnO1xuaW1wb3J0IE5hdmlnYXRpb25JdGVtIGZyb20gJy4vTmF2aWdhdGlvbkl0ZW0vTmF2aWdhdGlvbkl0ZW0nO1xuXG5jb25maWd1cmUoe2FkYXB0ZXI6IG5ldyBBZGFwdGVyKCl9KTsiXX0=
