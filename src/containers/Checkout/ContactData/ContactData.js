@@ -10,6 +10,8 @@ import classes from './ContactData.css'
 import axios from "../../../axios-orders";
 import withErrorHandler from "../../../hoc/withErrorHandler/withErrorHandler"
 import * as actions from '../../../store/actions/index'
+import {updateObject} from '../../../shared/utility'
+
 
 class ContactData extends Component {
     state = {
@@ -132,17 +134,17 @@ class ContactData extends Component {
     }
 
     inputChangedHandler = (event, inputIdentifier ) => {
-        //Dokonuje kopjowania płytkiego
-        const updateOrderForm = {
-            ...this.state.orderForm
-        }
+        
         //Dokonuje kopjowania głębokiego
-        const updateFormElement = {
-            ...updateOrderForm[inputIdentifier]
-        }
-        updateFormElement.value = event.target.value
-        updateFormElement.valid = this.checkValidity(updateFormElement.value, updateFormElement.validation)
-        updateFormElement.touched=true
+        const updateFormElement = updateObject(this.state.orderForm[inputIdentifier],{
+            value: event.target.value,
+            valid: this.checkValidity(event.target.value, this.state.orderForm[inputIdentifier].validation),
+            touched: true
+        })
+        //Dokonuje kopjowania płytkiego
+        const updateOrderForm = updateObject(this.state.orderForm, {
+            [inputIdentifier]: updateFormElement
+        })
         updateOrderForm[inputIdentifier] = updateFormElement
         
         let formIsValid = true
